@@ -79,17 +79,13 @@ struct ScriptexRadius {
 // MARK: - ScriptexShadow
 
 struct ScriptexShadow {
-    static let small: some View = {
-        return AnyView(
-            Shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
-        )
-    }()
+    static func small<T: View>(on content: T) -> some View {
+        content.shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
+    }
     
-    static let medium: some View = {
-        return AnyView(
-            Shadow(color: Color.black.opacity(0.1), radius: 8, x: 0, y: 4)
-        )
-    }()
+    static func medium<T: View>(on content: T) -> some View {
+        content.shadow(color: Color.black.opacity(0.1), radius: 8, x: 0, y: 4)
+    }
 }
 
 // MARK: - ButtonStyles
@@ -189,5 +185,13 @@ extension View {
             .background(ScriptexColors.cardBackground)
             .cornerRadius(ScriptexRadius.medium)
             .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
+    }
+    
+    func smallShadow() -> some View {
+        self.shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
+    }
+    
+    func mediumShadow() -> some View {
+        self.shadow(color: Color.black.opacity(0.1), radius: 8, x: 0, y: 4)
     }
 }

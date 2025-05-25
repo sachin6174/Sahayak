@@ -42,6 +42,36 @@ final class Helper: NSObject {
 // MARK: - HelperProtocol
 
 extension Helper: HelperProtocol {
+    // Add completion handler version for macOS 11 compatibility
+    func executeScript(at path: String, withReply reply: @escaping (String?, Error?) -> Void) {
+        NSLog("Executing script at \(path) with completion handler")
+        
+        // Execute script on a background queue to avoid blocking
+        DispatchQueue.global(qos: .userInitiated).async {
+            do {
+                let process = Process()
+                process.executableURL = ExecutionService.programURL
+                process.arguments = [path]
+
+                let outputPipe = Pipe()
+                process.standardOutput = outputPipe
+                process.standardError = outputPipe
+                try process.run()
+                
+                let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
+                
+                guard let output = String(data: outputData, encoding: .utf8) else {
+                    reply(nil, ScriptexError.invalidStringConversion)
+                    return
+                }
+                
+                reply(output, nil)
+            } catch {
+                NSLog("Error: \(error.localizedDescription)")
+                reply(nil, error)
+            }
+        }
+    }
 
     func executeScript(at path: String) async throws -> String {
         NSLog("Executing script at \(path)")

@@ -32,9 +32,46 @@ enum ExecutionService {
     static let programURL = URL(fileURLWithPath: "/usr/bin/env")
 
     // MARK: Execute
-
-    /// Execute the script at the provided URL.
+    
+    /// Execute the script at the provided URL with completion handler for macOS 11 compatibility
+    static func executeScript(at path: String, completion: @escaping (Result<String, Error>) -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            do {
+                let helper = try getHelperRemote()
+                // Fix: Explicitly use withReply parameter name to match @objc protocol
+                helper.executeScript(at: path, withReply: { output, error in
+                    if let error = error {
+                        completion(.failure(error))
+                    } else if let output = output {
+                        completion(.success(output))
+                    } else {
+                        completion(.failure(ScriptexError.unknown))
+                    }
+                })
+            } catch {
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    // For macOS 12+ compatibility we'll keep the async version too
+    @available(macOS 12.0, *)
     static func executeScript(at path: String) async throws -> String {
         try await HelperRemoteProvider.remote().executeScript(at: path)
+    }
+    
+    // Helper method to get remote without async/await
+    private static func getHelperRemote() throws -> HelperProtocol {
+        // This is a simplified implementation - in a real app you'd need a proper non-async implementation
+        // of HelperRemoteProvider.remote()
+        let connection = NSXPCConnection(machServiceName: HelperConstants.domain, options: .privileged)
+        connection.remoteObjectInterface = NSXPCInterface(with: HelperProtocol.self)
+        connection.resume()
+        
+        guard let helper = connection.remoteObjectProxy as? HelperProtocol else {
+            throw ScriptexError.helperConnection("Unable to get a valid helper connection")
+        }
+        
+        return helper
     }
 }

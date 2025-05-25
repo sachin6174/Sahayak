@@ -28,6 +28,10 @@
 		5EC2F1A52B3CB287001AFEFA /* ExecutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1A42B3CB287001AFEFA /* ExecutionService.swift */; };
 		5EC2F1A72B3CB2AD001AFEFA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1A62B3CB2AD001AFEFA /* Helper.swift */; };
 		5EC2F1A92B3CB4C1001AFEFA /* HelperRemoteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1A82B3CB4C1001AFEFA /* HelperRemoteProvider.swift */; };
+		69118FB12DE33C2E00211F9E /* FileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69118FB02DE33C2E00211F9E /* FileManagerView.swift */; };
+		69118FB22DE33C2E00211F9E /* AppManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69118FAF2DE33C2E00211F9E /* AppManagerView.swift */; };
+		69118FB42DE33EA400211F9E /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69118FB32DE33EA400211F9E /* DesignSystem.swift */; };
+		69118FB62DE340A300211F9E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69118FB52DE340A300211F9E /* DashboardView.swift */; };
 		69B57D672DE31B8300115022 /* com.sachin.Scriptex.helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5EC2F1932B3CAFA8001AFEFA /* com.sachin.Scriptex.helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -77,6 +81,10 @@
 		5EC2F1A42B3CB287001AFEFA /* ExecutionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionService.swift; sourceTree = "<group>"; };
 		5EC2F1A62B3CB2AD001AFEFA /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		5EC2F1A82B3CB4C1001AFEFA /* HelperRemoteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRemoteProvider.swift; sourceTree = "<group>"; };
+		69118FAF2DE33C2E00211F9E /* AppManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManagerView.swift; sourceTree = "<group>"; };
+		69118FB02DE33C2E00211F9E /* FileManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerView.swift; sourceTree = "<group>"; };
+		69118FB32DE33EA400211F9E /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		69118FB52DE340A300211F9E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,10 @@
 		5E835CD72B3B580C004BDB5D /* Scriptex */ = {
 			isa = PBXGroup;
 			children = (
+				69118FB52DE340A300211F9E /* DashboardView.swift */,
+				69118FB32DE33EA400211F9E /* DesignSystem.swift */,
+				69118FAF2DE33C2E00211F9E /* AppManagerView.swift */,
+				69118FB02DE33C2E00211F9E /* FileManagerView.swift */,
 				5E835CD82B3B580C004BDB5D /* ScriptexApp.swift */,
 				5E835CDA2B3B580C004BDB5D /* ContentView.swift */,
 				5E835CE72B3B58E9004BDB5D /* ExecutionService.swift */,
@@ -249,14 +261,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69118FB42DE33EA400211F9E /* DesignSystem.swift in Sources */,
 				5E835CDB2B3B580C004BDB5D /* ContentView.swift in Sources */,
 				5EC2F1A92B3CB4C1001AFEFA /* HelperRemoteProvider.swift in Sources */,
 				5E38205D2B41E74F00014CCD /* OSStatus+Extensions.swift in Sources */,
 				5E835CD92B3B580C004BDB5D /* ScriptexApp.swift in Sources */,
+				69118FB12DE33C2E00211F9E /* FileManagerView.swift in Sources */,
+				69118FB22DE33C2E00211F9E /* AppManagerView.swift in Sources */,
 				5EC2F1A22B3CB1E7001AFEFA /* HelperConstants.swift in Sources */,
 				5EC2F19F2B3CB190001AFEFA /* RemoteApplicationProtocol.swift in Sources */,
 				5E835CEA2B3B5902004BDB5D /* ScriptexError.swift in Sources */,
 				5E835CE82B3B58E9004BDB5D /* ExecutionService.swift in Sources */,
+				69118FB62DE340A300211F9E /* DashboardView.swift in Sources */,
 				5EC2F19C2B3CB110001AFEFA /* HelperProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

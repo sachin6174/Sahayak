@@ -22,11 +22,15 @@
 
 import Foundation
 
-@objc(HelperProtocol)
-public protocol HelperProtocol {
-    // Add completion handler version for macOS 11 compatibility
-    @objc func executeScript(at path: String, withReply reply: @escaping (String?, Error?) -> Void)
+// MARK: - HelperProtocol
+
+@objc(HelperProtocol) protocol HelperProtocol {
+    /// Execute the script at the provided path and return the output.
+    /// This is the macOS 11 compatible version with completion handler
+    func executeScript(at path: String, withReply reply: @escaping (String?, Error?) -> Void)
     
-    // Keep the async version for macOS 12+
-    @objc func executeScript(at path: String) async throws -> String
+    /// Execute the script at the provided path and return the output.
+    /// This is the macOS 12+ compatible async version
+    @available(macOS 12.0, *)
+    func executeScript(at path: String) async throws -> String
 }
