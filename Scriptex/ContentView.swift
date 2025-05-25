@@ -35,7 +35,7 @@ enum AppSection: String, CaseIterable, Identifiable {
     
     var icon: String {
         switch self {
-        case .dashboard: return "gauge.fill"
+        case .dashboard: return "speedometer"  // Changed from "gauge.fill" to a compatible icon
         case .scriptExecution: return "terminal.fill"
         case .appManager: return "app.badge.fill"
         case .fileManager: return "folder.fill"
