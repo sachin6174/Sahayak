@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E3820592B41BCA200014CCD /* com.sachin.Scriptex.helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5EC2F1932B3CAFA8001AFEFA /* com.sachin.Scriptex.helper */; };
+		5E38205D2B41E74F00014CCD /* OSStatus+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5EEAA2B40896200989C51 /* OSStatus+Extensions.swift */; };
+		5E835CD92B3B580C004BDB5D /* ScriptexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E835CD82B3B580C004BDB5D /* ScriptexApp.swift */; };
+		5E835CDB2B3B580C004BDB5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E835CDA2B3B580C004BDB5D /* ContentView.swift */; };
+		5E835CDD2B3B580C004BDB5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E835CDC2B3B580C004BDB5D /* Assets.xcassets */; };
+		5E835CE02B3B580C004BDB5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E835CDF2B3B580C004BDB5D /* Preview Assets.xcassets */; };
+		5E835CE82B3B58E9004BDB5D /* ExecutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E835CE72B3B58E9004BDB5D /* ExecutionService.swift */; };
+		5E835CEA2B3B5902004BDB5D /* ScriptexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E835CE92B3B5902004BDB5D /* ScriptexError.swift */; };
+		5EB5EEA92B40894B00989C51 /* ConnectionIdentityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5EEA82B40894B00989C51 /* ConnectionIdentityService.swift */; };
+		5EB5EEAB2B40896200989C51 /* OSStatus+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5EEAA2B40896200989C51 /* OSStatus+Extensions.swift */; };
+		5EC2F1962B3CAFA8001AFEFA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1952B3CAFA8001AFEFA /* main.swift */; };
+		5EC2F19A2B3CB0A4001AFEFA /* ScriptexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E835CE92B3B5902004BDB5D /* ScriptexError.swift */; };
+		5EC2F19C2B3CB110001AFEFA /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F19B2B3CB110001AFEFA /* HelperProtocol.swift */; };
+		5EC2F19D2B3CB110001AFEFA /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F19B2B3CB110001AFEFA /* HelperProtocol.swift */; };
+		5EC2F19F2B3CB190001AFEFA /* RemoteApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F19E2B3CB190001AFEFA /* RemoteApplicationProtocol.swift */; };
+		5EC2F1A02B3CB190001AFEFA /* RemoteApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F19E2B3CB190001AFEFA /* RemoteApplicationProtocol.swift */; };
+		5EC2F1A22B3CB1E7001AFEFA /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1A12B3CB1E7001AFEFA /* HelperConstants.swift */; };
+		5EC2F1A32B3CB1E7001AFEFA /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1A12B3CB1E7001AFEFA /* HelperConstants.swift */; };
+		5EC2F1A52B3CB287001AFEFA /* ExecutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1A42B3CB287001AFEFA /* ExecutionService.swift */; };
+		5EC2F1A72B3CB2AD001AFEFA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1A62B3CB2AD001AFEFA /* Helper.swift */; };
+		5EC2F1A92B3CB4C1001AFEFA /* HelperRemoteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F1A82B3CB4C1001AFEFA /* HelperRemoteProvider.swift */; };
+		69B57D672DE31B8300115022 /* com.sachin.Scriptex.helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5EC2F1932B3CAFA8001AFEFA /* com.sachin.Scriptex.helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E3820582B41BC8900014CCD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Scriptex.app/Contents/Library/LaunchServices;
+			dstSubfolderSpec = 16;
+			files = (
+				5E3820592B41BCA200014CCD /* com.sachin.Scriptex.helper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69B57D662DE31B7500115022 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				69B57D672DE31B8300115022 /* com.sachin.Scriptex.helper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5E3820562B41B9BE00014CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E3820572B41BBF100014CCD /* Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
+		5E38205A2B41C13100014CCD /* SMJobBlessUtil.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = SMJobBlessUtil.py; sourceTree = "<group>"; };
+		5E38205B2B41C39200014CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E835CD52B3B580C004BDB5D /* Scriptex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scriptex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E835CD82B3B580C004BDB5D /* ScriptexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptexApp.swift; sourceTree = "<group>"; };
+		5E835CDA2B3B580C004BDB5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E835CDC2B3B580C004BDB5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E835CDF2B3B580C004BDB5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E835CE12B3B580C004BDB5D /* Scriptex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scriptex.entitlements; sourceTree = "<group>"; };
+		5E835CE72B3B58E9004BDB5D /* ExecutionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionService.swift; sourceTree = "<group>"; };
+		5E835CE92B3B5902004BDB5D /* ScriptexError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptexError.swift; sourceTree = "<group>"; };
+		5EB5EEA82B40894B00989C51 /* ConnectionIdentityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionIdentityService.swift; sourceTree = "<group>"; };
+		5EB5EEAA2B40896200989C51 /* OSStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSStatus+Extensions.swift"; sourceTree = "<group>"; };
+		5EC2F1932B3CAFA8001AFEFA /* com.sachin.Scriptex.helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.sachin.Scriptex.helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC2F1952B3CAFA8001AFEFA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5EC2F19B2B3CB110001AFEFA /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		5EC2F19E2B3CB190001AFEFA /* RemoteApplicationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApplicationProtocol.swift; sourceTree = "<group>"; };
+		5EC2F1A12B3CB1E7001AFEFA /* HelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
+		5EC2F1A42B3CB287001AFEFA /* ExecutionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionService.swift; sourceTree = "<group>"; };
+		5EC2F1A62B3CB2AD001AFEFA /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5EC2F1A82B3CB4C1001AFEFA /* HelperRemoteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperRemoteProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E835CD22B3B580C004BDB5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EC2F1902B3CAFA8001AFEFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E835CCC2B3B580C004BDB5D = {
+			isa = PBXGroup;
+			children = (
+				5E38205A2B41C13100014CCD /* SMJobBlessUtil.py */,
+				5E835CD72B3B580C004BDB5D /* Scriptex */,
+				5EC2F1942B3CAFA8001AFEFA /* Helper */,
+				5E835CD62B3B580C004BDB5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E835CD62B3B580C004BDB5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E835CD52B3B580C004BDB5D /* Scriptex.app */,
+				5EC2F1932B3CAFA8001AFEFA /* com.sachin.Scriptex.helper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E835CD72B3B580C004BDB5D /* Scriptex */ = {
+			isa = PBXGroup;
+			children = (
+				5E835CD82B3B580C004BDB5D /* ScriptexApp.swift */,
+				5E835CDA2B3B580C004BDB5D /* ContentView.swift */,
+				5E835CE72B3B58E9004BDB5D /* ExecutionService.swift */,
+				5E835CE92B3B5902004BDB5D /* ScriptexError.swift */,
+				5EC2F1A82B3CB4C1001AFEFA /* HelperRemoteProvider.swift */,
+				5E38205B2B41C39200014CCD /* Info.plist */,
+				5E835CDC2B3B580C004BDB5D /* Assets.xcassets */,
+				5E835CE12B3B580C004BDB5D /* Scriptex.entitlements */,
+				5E835CDE2B3B580C004BDB5D /* Preview Content */,
+			);
+			path = Scriptex;
+			sourceTree = "<group>";
+		};
+		5E835CDE2B3B580C004BDB5D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E835CDF2B3B580C004BDB5D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5EC2F1942B3CAFA8001AFEFA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5EC2F1952B3CAFA8001AFEFA /* main.swift */,
+				5EC2F19B2B3CB110001AFEFA /* HelperProtocol.swift */,
+				5EC2F19E2B3CB190001AFEFA /* RemoteApplicationProtocol.swift */,
+				5EC2F1A12B3CB1E7001AFEFA /* HelperConstants.swift */,
+				5EB5EEA82B40894B00989C51 /* ConnectionIdentityService.swift */,
+				5EB5EEAA2B40896200989C51 /* OSStatus+Extensions.swift */,
+				5EC2F1A42B3CB287001AFEFA /* ExecutionService.swift */,
+				5EC2F1A62B3CB2AD001AFEFA /* Helper.swift */,
+				5E3820562B41B9BE00014CCD /* Info.plist */,
+				5E3820572B41BBF100014CCD /* Launchd.plist */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E835CD42B3B580C004BDB5D /* Scriptex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E835CE42B3B580C004BDB5D /* Build configuration list for PBXNativeTarget "Scriptex" */;
+			buildPhases = (
+				5E835CD12B3B580C004BDB5D /* Sources */,
+				5E835CD22B3B580C004BDB5D /* Frameworks */,
+				5E835CD32B3B580C004BDB5D /* Resources */,
+				5E3820582B41BC8900014CCD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scriptex;
+			productName = Scriptex;
+			productReference = 5E835CD52B3B580C004BDB5D /* Scriptex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EC2F1922B3CAFA8001AFEFA /* com.sachin.Scriptex.helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EC2F1992B3CAFA8001AFEFA /* Build configuration list for PBXNativeTarget "com.sachin.Scriptex.helper" */;
+			buildPhases = (
+				5EC2F18F2B3CAFA8001AFEFA /* Sources */,
+				5EC2F1902B3CAFA8001AFEFA /* Frameworks */,
+				69B57D662DE31B7500115022 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.sachin.Scriptex.helper;
+			productName = Helper;
+			productReference = 5EC2F1932B3CAFA8001AFEFA /* com.sachin.Scriptex.helper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E835CCD2B3B580C004BDB5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					5E835CD42B3B580C004BDB5D = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					5EC2F1922B3CAFA8001AFEFA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 5E835CD02B3B580C004BDB5D /* Build configuration list for PBXProject "Scriptex" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E835CCC2B3B580C004BDB5D;
+			productRefGroup = 5E835CD62B3B580C004BDB5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E835CD42B3B580C004BDB5D /* Scriptex */,
+				5EC2F1922B3CAFA8001AFEFA /* com.sachin.Scriptex.helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E835CD32B3B580C004BDB5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E835CE02B3B580C004BDB5D /* Preview Assets.xcassets in Resources */,
+				5E835CDD2B3B580C004BDB5D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E835CD12B3B580C004BDB5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E835CDB2B3B580C004BDB5D /* ContentView.swift in Sources */,
+				5EC2F1A92B3CB4C1001AFEFA /* HelperRemoteProvider.swift in Sources */,
+				5E38205D2B41E74F00014CCD /* OSStatus+Extensions.swift in Sources */,
+				5E835CD92B3B580C004BDB5D /* ScriptexApp.swift in Sources */,
+				5EC2F1A22B3CB1E7001AFEFA /* HelperConstants.swift in Sources */,
+				5EC2F19F2B3CB190001AFEFA /* RemoteApplicationProtocol.swift in Sources */,
+				5E835CEA2B3B5902004BDB5D /* ScriptexError.swift in Sources */,
+				5E835CE82B3B58E9004BDB5D /* ExecutionService.swift in Sources */,
+				5EC2F19C2B3CB110001AFEFA /* HelperProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EC2F18F2B3CAFA8001AFEFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC2F1A32B3CB1E7001AFEFA /* HelperConstants.swift in Sources */,
+				5EC2F1A72B3CB2AD001AFEFA /* Helper.swift in Sources */,
+				5EB5EEAB2B40896200989C51 /* OSStatus+Extensions.swift in Sources */,
+				5EC2F1A02B3CB190001AFEFA /* RemoteApplicationProtocol.swift in Sources */,
+				5EC2F1A52B3CB287001AFEFA /* ExecutionService.swift in Sources */,
+				5EC2F19A2B3CB0A4001AFEFA /* ScriptexError.swift in Sources */,
+				5EB5EEA92B40894B00989C51 /* ConnectionIdentityService.swift in Sources */,
+				5EC2F1962B3CAFA8001AFEFA /* main.swift in Sources */,
+				5EC2F19D2B3CB110001AFEFA /* HelperProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5E835CE22B3B580C004BDB5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E835CE32B3B580C004BDB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5E835CE52B3B580C004BDB5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scriptex/Scriptex.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scriptex/Preview Content\"";
+				DEVELOPMENT_TEAM = QA7BM7NDFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Scriptex/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.Scriptex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5E835CE62B3B580C004BDB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scriptex/Scriptex.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scriptex/Preview Content\"";
+				DEVELOPMENT_TEAM = QA7BM7NDFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Scriptex/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.Scriptex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5EC2F1972B3CAFA8001AFEFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA7BM7NDFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Helper/Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/Helper/Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/Helper/Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.Scriptex.helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5EC2F1982B3CAFA8001AFEFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Helper/Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/Helper/Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/Helper/Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.Scriptex.helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E835CD02B3B580C004BDB5D /* Build configuration list for PBXProject "Scriptex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E835CE22B3B580C004BDB5D /* Debug */,
+				5E835CE32B3B580C004BDB5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E835CE42B3B580C004BDB5D /* Build configuration list for PBXNativeTarget "Scriptex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E835CE52B3B580C004BDB5D /* Debug */,
+				5E835CE62B3B580C004BDB5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EC2F1992B3CAFA8001AFEFA /* Build configuration list for PBXNativeTarget "com.sachin.Scriptex.helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EC2F1972B3CAFA8001AFEFA /* Debug */,
+				5EC2F1982B3CAFA8001AFEFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E835CCD2B3B580C004BDB5D /* Project object */;
+}
