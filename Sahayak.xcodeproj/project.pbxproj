@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5E835CD02B3B580C004BDB5D /* Build configuration list for PBXProject "Scriptex" */;
+			buildConfigurationList = 5E835CD02B3B580C004BDB5D /* Build configuration list for PBXProject "Sahayak" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -508,7 +508,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E835CD02B3B580C004BDB5D /* Build configuration list for PBXProject "Scriptex" */ = {
+		5E835CD02B3B580C004BDB5D /* Build configuration list for PBXProject "Sahayak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E835CE22B3B580C004BDB5D /* Debug */,

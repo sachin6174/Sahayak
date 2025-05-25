@@ -26,7 +26,7 @@
                BlueprintIdentifier = "5E835CD42B3B580C004BDB5D"
                BuildableName = "Scriptex.app"
                BlueprintName = "Scriptex"
-               ReferencedContainer = "container:Scriptex.xcodeproj">
+               ReferencedContainer = "container:Sahayak.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -40,7 +40,7 @@
                BlueprintIdentifier = "5EC2F1922B3CAFA8001AFEFA"
                BuildableName = "com.sachin.Scriptex.helper"
                BlueprintName = "com.sachin.Scriptex.helper"
-               ReferencedContainer = "container:Scriptex.xcodeproj">
+               ReferencedContainer = "container:Sahayak.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -69,7 +69,7 @@
             BlueprintIdentifier = "5E835CD42B3B580C004BDB5D"
             BuildableName = "Scriptex.app"
             BlueprintName = "Scriptex"
-            ReferencedContainer = "container:Scriptex.xcodeproj">
+            ReferencedContainer = "container:Sahayak.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -86,7 +86,7 @@
             BlueprintIdentifier = "5E835CD42B3B580C004BDB5D"
             BuildableName = "Scriptex.app"
             BlueprintName = "Scriptex"
-            ReferencedContainer = "container:Scriptex.xcodeproj">
+            ReferencedContainer = "container:Sahayak.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
