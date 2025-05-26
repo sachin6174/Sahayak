@@ -129,7 +129,7 @@ struct ContentView: View {
                                 .ignoresSafeArea()
                             
                             VStack(spacing: ScriptexPadding.large) {
-                                Text("Scriptex")
+                                Text("Shahyak")
                                     .font(.system(size: 42, weight: .bold, design: .rounded))
                                     .foregroundColor(.white)
                                 
@@ -156,7 +156,7 @@ struct SidebarView: View {
         VStack(alignment: .leading, spacing: 0) {
             // Sidebar Header
             VStack(alignment: .leading, spacing: ScriptexPadding.small) {
-                Text("Scriptex")
+                Text("Shahyak")
                     .font(ScriptexFonts.title)
                     .foregroundColor(ScriptexColors.sidebarText)
                 
